@@ -90,9 +90,9 @@ export default function About() {
                 community.
               </p>
               <p className="text-gray-700">
-                Over the years, we've successfully led numerous preservation
+                Over the years, we&apos;ve successfully led numerous preservation
                 projects, community events, and environmental initiatives that have
-                helped maintain Glen Echo's distinctive charm while ensuring its
+                helped maintain Glen Echo&apos;s distinctive charm while ensuring its
                 sustainable development.
               </p>
             </div>
