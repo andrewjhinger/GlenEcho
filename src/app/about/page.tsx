@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'; // ✅ This is the correct one
 
 export default function About() {
   const coreValues = [
