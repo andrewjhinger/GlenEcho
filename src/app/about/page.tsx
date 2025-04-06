@@ -84,7 +84,7 @@ export default function About() {
               <p className="text-gray-700">
                 Founded in 1995, Friends of Glen Echo emerged from a group of
                 passionate residents who recognized the need to protect and enhance
-                our neighborhood's unique character. What started as a small
+                our neighborhood&apos;s unique character. What started as a small
                 community initiative has grown into a thriving nonprofit
                 organization that continues to make a positive impact on our
                 community.
