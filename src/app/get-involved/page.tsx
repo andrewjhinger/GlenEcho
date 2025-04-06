@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { getStripe } from '@/lib/stripe';
 
 export default function GetInvolved() {
