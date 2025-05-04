@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import JoinUsLink from "@/components/JoinUsLink";
+import DonateButton from "@/components/DonateButton";
 
 export default function Home() {
   return (
@@ -24,18 +26,8 @@ export default function Home() {
             Join us in preserving and enhancing our beloved neighborhood
           </p>
           <div className="flex gap-4 justify-center">
-            <Link
-              href="/get-involved#membership"
-              className="px-6 py-3 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Join Us
-            </Link>
-            <Link
-              href="/get-involved#donations"
-              className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-colors"
-            >
-              Donate
-            </Link>
+            <JoinUsLink />
+            <DonateButton></DonateButton>
           </div>
         </div>
       </section>

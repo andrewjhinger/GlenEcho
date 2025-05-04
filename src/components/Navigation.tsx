@@ -11,6 +11,8 @@ export default function Navigation() {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
+    { href: '/history', label: 'History' },
+    { href: '/priorities', label: 'Priorities' },
     { href: '/get-involved', label: 'Get Involved' },
   ];
 
@@ -31,11 +33,10 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
-                  pathname === item.href
-                    ? 'border-blue-500 text-gray-900'
-                    : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
-                }`}
+                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${pathname === item.href
+                  ? 'border-blue-500 text-gray-900'
+                  : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                  }`}
               >
                 {item.label}
               </Link>
@@ -92,11 +93,10 @@ export default function Navigation() {
             <Link
               key={item.href}
               href={item.href}
-              className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
-                pathname === item.href
-                  ? 'bg-blue-50 border-blue-500 text-blue-700'
-                  : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'
-              }`}
+              className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${pathname === item.href
+                ? 'bg-blue-50 border-blue-500 text-blue-700'
+                : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'
+                }`}
               onClick={() => setIsMenuOpen(false)}
             >
               {item.label}

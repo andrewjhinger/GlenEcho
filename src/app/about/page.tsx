@@ -33,26 +33,6 @@ export default function About() {
 
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/glen-echo-hero.jpg"
-            alt="Glen Echo Neighborhood"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto">
-            Dedicated to preserving and enhancing our beloved neighborhood
-          </p>
-        </div>
-      </section>
-
       {/* Mission Statement */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -74,7 +54,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/history.jpg"
+                src="/images/1926_calumet-bridge_nhsyearbook_1926.jpg"
                 alt="Glen Echo Historical Photo"
                 fill
                 className="object-cover rounded-lg"
@@ -82,7 +62,7 @@ export default function About() {
             </div>
             <div className="space-y-4">
               <p className="text-gray-700">
-                Founded in 1995, Friends of Glen Echo emerged from a group of
+                Founded in 2025, Friends of Glen Echo emerged from a group of
                 passionate residents who recognized the need to protect and enhance
                 our neighborhood&apos;s unique character. What started as a small
                 community initiative has grown into a thriving nonprofit
