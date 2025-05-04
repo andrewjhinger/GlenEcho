@@ -27,7 +27,6 @@ export default function Home() {
           </p>
           <div className="flex gap-4 justify-center">
             <JoinUsLink />
-            <DonateButton></DonateButton>
           </div>
         </div>
       </section>
