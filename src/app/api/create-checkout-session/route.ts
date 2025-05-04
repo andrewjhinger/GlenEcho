@@ -30,8 +30,8 @@ export async function POST(req: Request) {
           quantity: 1,
         },
       ],
-      success_url: 'http://localhost:3000/success',
-      cancel_url: 'http://localhost:3000/cancel',
+      success_url: 'http://https://glen-echo.vercel.app/success',
+      cancel_url: 'http://https://glen-echo.vercel.app/cancel',
     });
 
     return NextResponse.json({ url: session.url });
