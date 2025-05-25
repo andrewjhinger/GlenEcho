@@ -38,11 +38,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Friends of Glen Echo is dedicated to preserving the rich history,
-            culture, and environment of our neighborhood while fostering community
-            involvement and civic engagement. We work to maintain the unique
-            character of Glen Echo while ensuring its sustainable development for
-            future generations.
+            Friends of Glen Echo is committed to fostering civic engagement and community involvement through the enhancement and preservation of the Glen Echo neighborhood and its surroundings.
           </p>
         </div>
       </section>
@@ -62,18 +58,7 @@ export default function About() {
             </div>
             <div className="space-y-4">
               <p className="text-gray-700">
-                Founded in 2025, Friends of Glen Echo emerged from a group of
-                passionate residents who recognized the need to protect and enhance
-                our neighborhood&apos;s unique character. What started as a small
-                community initiative has grown into a thriving nonprofit
-                organization that continues to make a positive impact on our
-                community.
-              </p>
-              <p className="text-gray-700">
-                Over the years, we&apos;ve successfully led numerous preservation
-                projects, community events, and environmental initiatives that have
-                helped maintain Glen Echo&apos;s distinctive charm while ensuring its
-                sustainable development.
+                Founded in 2025, Friends of Glen Echo emerged from a group of passionate residents who recognized the need to bring community members together to celebrate and enhance our neighborhood's unique character.  Review our minutes and agendas below.  We look forward to connecting with you!
               </p>
             </div>
           </div>

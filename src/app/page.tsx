@@ -36,9 +36,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Friends of Glen Echo is dedicated to preserving the rich history,
-            culture, and environment of our neighborhood while fostering community
-            involvement and civic engagement.
+            Friends of Glen Echo is committed to fostering civic engagement and community involvement through the enhancement and preservation of the Glen Echo neighborhood and its surroundings.
           </p>
           <Link
             href="/about"

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glen Echo Architecture Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+        }
+
+        .gallery-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            margin: 30px 0;
+        }
+
+        .card {
+            background: #fafafa;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+            padding: 18px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+
+        .style-title {
+            margin: 12px 0 4px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #305b5b;
+        }
+
+        .caption {
+            font-size: 0.98rem;
+            color: #556;
+            margin-bottom: 8px;
+        }
+
+        .desc {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        @media (max-width:600px) {
+            .gallery-container {
+                padding: 12px;
+            }
+
+            .card img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery-container">
+        <h1>Glen Echo Historic District</h1>
+        <h2>Architecture Gallery</h2>
+        <div class="gallery-grid">
+
+            <!-- Craftsman Style Example -->
+            <div class="card">
+                <img src="images/glen-echo-craftsman.jpg" alt="Craftsman Style Example">
+                <div class="style-title">Craftsman Style</div>
+                <div class="caption">411 Arcadia Ave (Gregg House, 1911–12)</div>
+                <div class="desc">Bungalow with signature wide porch, exposed rafters, and stone foundation. Typical of
+                    the Arts & Crafts movement in Glen Echo.</div>
+            </div>
+
+            <!-- Shingle Style Example -->
+            <div class="card">
+                <img src="images/glen-echo-shingle.jpg" alt="Shingle Style Example">
+                <div class="style-title">Shingle Style</div>
+                <div class="caption">2620–2622 Summit St (Lehman House, 1911–12)</div>
+                <div class="desc">Asymmetrical 2½-story double dwelling, covered in wood shingles, reflecting the
+                    flowing, informal style popular in the early 1900s.</div>
+            </div>
+
+            <!-- Tudor Revival Example -->
+            <div class="card">
+                <img src="images/glen-echo-tudor.jpg" alt="Tudor Revival Example">
+                <div class="style-title">Tudor Revival</div>
+                <div class="caption">2570 Summit (Evans House, 1911–12)</div>
+                <div class="desc">Classic Tudor with steep gables, decorative half-timbering, and multi-pane windows.
+                    Emphasizes storybook charm and craftsmanship.</div>
+            </div>
+
+            <!-- Colonial Revival Example -->
+            <div class="card">
+                <img src="images/glen-echo-colonial.jpg" alt="Colonial Revival Example">
+                <div class="style-title">Colonial Revival</div>
+                <div class="caption">2539 N. Fourth Street (Downs House, 1916)</div>
+                <div class="desc">Blonde brick with symmetrical facade, Palladian window, and classical details. A
+                    reflection of early 20th-century American tradition.</div>
+            </div>
+
+            <!-- Gable End House Example -->
+            <div class="card">
+                <img src="images/glen-echo-gableend.jpg" alt="Gable End House Example">
+                <div class="style-title">Gable End House</div>
+                <div class="caption">2561 Glen Echo Drive</div>
+                <div class="desc">Frame or brick homes with the gable facing the street, often featuring porches and
+                    Craftsman or Classical ornamentation.</div>
+            </div>
+
+            <!-- Dormer-Front Bungalow Example -->
+            <div class="card">
+                <img src="images/glen-echo-dormerbungalow.jpg" alt="Dormer-Front Bungalow Example">
+                <div class="style-title">Dormer-Front Bungalow</div>
+                <div class="caption">2612 Summit Street</div>
+                <div class="desc">Bungalows with broad front dormers, inset porches, and relaxed living spaces.
+                    Distinctively American.</div>
+            </div>
+
+            <!-- American Four-Square Example -->
+            <div class="card">
+                <img src="images/glen-echo-foursquare.jpg" alt="American Four-Square Example">
+                <div class="style-title">American Four-Square</div>
+                <div class="caption">2676 Summit Street</div>
+                <div class="desc">Boxy, practical two-story homes with a central dormer and full-width porch, echoing
+                    the efficiency of early suburbia.</div>
+            </div>
+
+            <!-- Side-Gabled House Example -->
+            <div class="card">
+                <img src="images/glen-echo-sidegable.jpg" alt="Side-Gabled House Example">
+                <div class="style-title">Side-Gabled House</div>
+                <div class="caption">2564 Glen Echo Dr.</div>
+                <div class="desc">Homes with gable roofs running parallel to the street, featuring front porches and
+                    diverse detailing.</div>
+            </div>
+
+            <!-- Gabled Ell Variation Example -->
+            <div class="card">
+                <img src="images/glen-echo-ell.jpg" alt="Gabled Ell Variation Example">
+                <div class="style-title">Gabled Ell Variation</div>
+                <div class="caption">2584 Indianola Avenue</div>
+                <div class="desc">L-shaped homes with intersecting roofs, wraparound porches, and intricate shingle
+                    work.</div>
+            </div>
+
+        </div>
+        <p style="text-align:center; color:#888; margin-top: 24px;">Click or tap any card for a closer look and more
+            details!</p>
+    </div>
+</body>
+
+</html>
