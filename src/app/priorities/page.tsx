@@ -1,4 +1,4 @@
-import JoinUsLink from "@/components/DonateButton";
+import JoinUsLink from "@/components/JoinUsLink";
 
 export default function Priorities() {
     return (
@@ -12,12 +12,15 @@ export default function Priorities() {
 
                 <h2 className="text-2xl font-semibold mt-8">Key Areas of Focus</h2>
                 <ul className="list-disc list-inside space-y-2">
-                    <li>Preservation and restoration of the ravine's native habitats</li>
-                    <li>Stormwater management and erosion control</li>
-                    <li>Community clean-up events and ecological stewardship</li>
-                    <li>Educational signage and historical interpretation</li>
-                    <li>Partnerships with local schools, parks, and environmental groups</li>
+                    <li>Establishing community awareness of our organization</li>
+                    <li>Glenmawr median park improvements, including invasives removal</li>
+                    <li>Environmental education, including spotted lanternfly reduction</li>
+                    <li>Community events: July 4th bicycle parade & December Sinterklaus/Bootfest</li>
+                    <li>Trash cleanups and more</li>
                 </ul>
+                <div className="flex justify-center">
+                    <JoinUsLink />
+                </div>
             </div>
         </main>
     );
