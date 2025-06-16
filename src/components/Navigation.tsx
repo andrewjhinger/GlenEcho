@@ -14,6 +14,7 @@ export default function Navigation() {
     { href: '/history', label: 'History' },
     { href: '/priorities', label: 'Priorities' },
     { href: '/get-involved', label: 'Get Involved' },
+    { href: '/store', label: 'Store' },
   ];
 
   return (
