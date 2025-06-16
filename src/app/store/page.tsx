@@ -74,7 +74,7 @@ export default function StorePage() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Shop</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Support Friends of Glen Echo by purchasing our community merchandise. 
-            All proceeds help fund our neighborhood preservation efforts.
+            All proceeds help fund neighborhood events and initiatives.
           </p>
         </div>
         
