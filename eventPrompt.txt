@@ -1,0 +1,46 @@
+Write a new React component (or update an existing page) called EventsPage.tsx that displays upcoming community events in a visually appealing and accessible layout. Use Tailwind CSS for styling. The page should include the following events with dates, times, sign-up links, and notes where applicable:
+
+Events to include:
+July 4th Breakfast & Bike Parade
+
+Date/Time: July 4, 2025, 9:00 AM – 11:00 AM
+
+Bike Parade Lineup: 8:45 AM
+
+Sign-Up Link: tinyurl.com/glen-echo-july-4
+
+Flyer: Add a prominent link labeled “View Flyer” that links to a flyer PDF (assume the file is hosted in the /public/flyers/july4.pdf path for now)
+
+Invasives Removal Event
+
+Date/Time: TBD
+
+Note: “Stay tuned for more information.”
+
+Trash Pickup in Glen Echo Park
+
+Date/Time: TBD
+
+Note: “Details coming soon.”
+
+Sinterclaus/Bootfest
+
+Date/Time: TBD
+
+Note: “Check back later for schedule and sign-up.”
+
+Design requirements:
+Each event should be displayed in its own card with a heading, description, date/time, and link(s)
+
+Use responsive design, spacing, and clear typography
+
+Include a top-level page title: Upcoming Events
+
+Place the most immediate event (July 4) at the top
+
+Add a subtle visual indicator (like a colored border or tag) to distinguish confirmed vs. TBD events
+
+File structure assumptions:
+Assume Tailwind CSS is installed
+
+Assume the page is located at /app/events/page.tsx in a Next.js 13+ app
