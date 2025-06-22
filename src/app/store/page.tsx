@@ -71,7 +71,7 @@ export default function StorePage() {
     <main className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Shop</h1>
+          <h1 className="text-4xl font-bold text-client-green mb-4">Shop</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Support Friends of Glen Echo by purchasing our community merchandise. 
             All proceeds help fund neighborhood events and initiatives.

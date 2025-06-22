@@ -36,7 +36,7 @@ export default function About() {
       {/* Mission Statement */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+          <h2 className="text-3xl font-bold mb-6 text-[#003300]">Our Mission</h2>
           <p className="text-lg text-gray-700 mb-8">
             Friends of Glen Echo is committed to fostering civic engagement and community involvement through the enhancement and preservation of the Glen Echo neighborhood and its surroundings.
           </p>
@@ -44,9 +44,9 @@ export default function About() {
       </section>
 
       {/* History */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-[#99CCCC]/10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our History</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-[#003300]">Our History</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative h-[400px]">
               <Image
@@ -68,17 +68,17 @@ export default function About() {
       {/* Core Values */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Core Values</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-[#003300]">Our Core Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {coreValues.map((value) => (
               <div
                 key={value.title}
-                className="text-center p-6 bg-gray-50 rounded-lg"
+                className="text-center p-6 bg-[#99CCCC]/10 rounded-lg border border-[#99CCCC]/20"
               >
-                <div className="text-blue-600 mb-4 flex justify-center">
+                <div className="text-[#003300] mb-4 flex justify-center">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-[#003300]">{value.title}</h3>
                 <p className="text-gray-700">{value.description}</p>
               </div>
             ))}

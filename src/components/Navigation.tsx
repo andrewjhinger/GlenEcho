@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   const navItems = [
@@ -15,30 +16,41 @@ export default function Navigation() {
     { href: '/priorities', label: 'Priorities' },
     { href: '/get-involved', label: 'Get Involved' },
     { href: '/events', label: 'Events' },
-    { href: '/store', label: 'Shop' },
+    { href: '/store', label: 'Store' },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white shadow-md fixed w-full z-40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+    <nav className={`nav-header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="container">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-bold text-gray-900">
-              Friends of Glen Echo
+          <div className="flex-shrink-0">
+            <Link href="/" className="flex items-center">
+              <span 
+                className="text-2xl font-bold text-charcoal"
+                style={{ fontFamily: 'var(--font-heading)' }}
+              >
+                Friends of Glen Echo
+              </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${pathname === item.href
-                  ? 'border-blue-500 text-gray-900'
-                  : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
-                  }`}
+                className={`nav-link ${pathname === item.href ? 'active' : ''}`}
               >
                 {item.label}
               </Link>
@@ -46,10 +58,10 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex items-center sm:hidden">
+          <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-charcoal hover:text-moss hover:bg-sage/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sage transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
@@ -89,16 +101,15 @@ export default function Navigation() {
       </div>
 
       {/* Mobile menu */}
-      <div className={`${isMenuOpen ? 'block' : 'hidden'} sm:hidden`}>
-        <div className="pt-2 pb-3 space-y-1">
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-white border-t border-cool-gray`}>
+        <div className="container py-4 space-y-2">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${pathname === item.href
-                ? 'bg-blue-50 border-blue-500 text-blue-700'
-                : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'
-                }`}
+              className={`nav-link block w-full text-left ${
+                pathname === item.href ? 'active' : ''
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               {item.label}
