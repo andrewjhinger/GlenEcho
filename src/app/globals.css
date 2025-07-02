@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Instrument+Sans:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Epilogue:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -25,9 +22,9 @@
   --client-teal-light: #B3D9D9;
   --client-green-light: #006600;
   
-  /* Default Typography (Playfair + Inter) */
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  /* Default Typography (Fraunces + DM Sans) */
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'DM Sans', sans-serif;
   
   /* Spacing */
   --section-padding: clamp(3rem, 8vw, 6rem);
@@ -43,31 +40,7 @@
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Font Pairing Classes */
-body.font-pairing-1 {
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
-}
 
-body.font-pairing-2 {
-  --font-heading: 'Libre Baskerville', serif;
-  --font-body: 'Instrument Sans', sans-serif;
-}
-
-body.font-pairing-3 {
-  --font-heading: 'Inknut Antiqua', serif;
-  --font-body: 'DM Sans', sans-serif;
-}
-
-body.font-pairing-4 {
-  --font-heading: 'Fraunces', serif;
-  --font-body: 'DM Sans', sans-serif;
-}
-
-body.font-pairing-5 {
-  --font-heading: 'Fraunces', serif;
-  --font-body: 'Epilogue', sans-serif;
-}
 
 /* Base styles */
 * {
@@ -166,47 +139,6 @@ p {
 .btn-outline:hover {
   background-color: var(--client-green);
   color: var(--white);
-}
-
-/* Font Toggle Button */
-.font-toggle {
-  position: fixed;
-  top: 80px;
-  right: 20px;
-  z-index: 100;
-  background: var(--white);
-  border: 2px solid var(--client-teal);
-  border-radius: var(--border-radius);
-  padding: 0.75rem 1rem;
-  font-family: var(--font-body);
-  font-weight: 500;
-  color: var(--client-green);
-  cursor: pointer;
-  box-shadow: var(--card-shadow);
-  transition: var(--transition-smooth);
-}
-
-.font-toggle:hover {
-  background-color: var(--client-teal);
-  color: var(--white);
-  transform: translateY(-2px);
-  box-shadow: var(--card-shadow-hover);
-}
-
-.font-info {
-  position: fixed;
-  top: 140px;
-  right: 20px;
-  z-index: 99;
-  background: var(--white);
-  border: 1px solid var(--client-teal);
-  border-radius: var(--border-radius);
-  padding: 0.75rem;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: var(--client-green);
-  box-shadow: var(--card-shadow);
-  max-width: 200px;
 }
 
 /* Navigation Styles */
@@ -442,13 +374,6 @@ p {
   
   .card {
     padding: 1.5rem;
-  }
-
-  .font-toggle,
-  .font-info {
-    right: 10px;
-    font-size: 0.8rem;
-    padding: 0.5rem;
   }
 }
 
